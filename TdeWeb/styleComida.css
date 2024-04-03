@@ -1,0 +1,14 @@
+.imagem_fundo {
+    width: 100%;
+    height: 27.375rem;
+    background-image: url("../TdeWeb/imagens/backgroundComida.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 700px) {
+    .imagem_fundo {
+      background-image: url("../TdeWeb/imagens/backgroundComida-mobile.png");
+    }
+  }
+  

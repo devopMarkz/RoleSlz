@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200; 1.300;1.400;1.500;1.600;1.700;1.800;1.900&display=swap');
+
+:root{
+    --fonte-principal: "Poppins", sans-serif;
+    --cor-principal: #39364f;
+    --cor-de-fundo-categorias: #dee5ff;
+    --cor-da-borda-categorias: #dee5ff;
+    --cor-de-fundo-anuncio: #B32A34;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+}
+
+body {
+    box-sizing: border-box;
+    color: var(--cor-principal);
+}
+
+/* NAVEGAÇÃO */
+
+.navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 140px;
+}
+
+.navegacao__container1__links { 
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.navegacao__container1__links > li a {
+    padding: 5px;
+    text-decoration: none;
+    color: var(--cor-principal);
+}
+
+.navegacao__container1__links > li a:hover {
+    color: black;
+    background-color: rgb(223, 210, 210);
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.navegacao__container2 > input {
+    border: solid rgb(234, 217, 217) 1px;
+    padding: 10px 50px;
+    text-align: center;
+    outline: 0;
+    border-radius: 16px;
+}
+
+
+/* CABEÇALHO */
+
+.cabecalho {
+    width: 100%;
+    height: 27.375rem;
+    background-image: url("../TdeWeb/imagens/imagemDoCabecalho2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cabecalho__anuncio {
+    display: inline;
+    position: relative;
+    top: 90%;
+    left: 5%;
+    background-color: var(--cor-de-fundo-anuncio);
+    padding: 10px 20px;
+    color: white;
+    border-radius: 8px;
+}
+
+
+/* CONTEÚDO PRINCIPAL */
+
+.conteudo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.conteudo > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--cor-principal);
+}
+
+.categorias {
+    width: 108px;
+    height: 108px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: solid var(--cor-da-borda-categorias) 1px;
+}
+
+.categorias:hover {
+    background-color: var(--cor-de-fundo-categorias);
+}
+
+/* EXCLUI A BARRA DE PESQUISA EM TELA DE TABLET OU MOBILE */
+@media (max-width: 700px) {
+    .navegacao {
+        padding: 10px;
+    }
+
+    .navegacao__container2 {
+        display: none;
+    }
+
+    .cabecalho {
+        background-image: url("../TdeWeb/imagens/ImagemDoCabecalho2-mobile.png");
+    }
+
+    .conteudo { 
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        row-gap: 15px;
+    }
+}

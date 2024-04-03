@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoleSlz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGAÇÃO -->
+    
+    <nav class="navegacao">
+        <div class="navegacao__container1">
+            <ul class="navegacao__container1__links">
+                <li> <a href="index.html"> <img src="../TdeWeb/imagens/logo.svg" alt=""> </a> </li>
+                <li> <a href="index.html">Home</a> </li>
+                <li> <a href="criarEvento.html">Criar evento</a> </li>
+                <li> <a href="ajuda.html">Ajuda</a> </li>
+            </ul>
+        </div>
+
+        <div class="navegacao__container2">
+            <input list="events" placeholder="Pesquisar Eventos">
+            <datalist id="events">
+                <option value="Música"></option>
+                <option value="Teatro"></option>
+                <option value="Comidas"></option>
+                <option value="Cinema"></option>
+            </datalist>
+        </div>
+    </nav>
+
+    <!-- CABEÇALHO -->
+
+    <header class="cabecalho">
+        <p class="cabecalho__anuncio">Encontre seu evento aqui!</p>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+
+    <main class="conteudo">
+        <a href="musica.html">
+            <div class="categorias">
+                <img src="../TdeWeb/imagens/nota-musical-icon.svg" alt="Imagem ilustrativa de uma nota musical">
+            </div>
+            <p> Música </p>
+        </a>
+
+        <a href="teatro.html">
+            <div class="categorias">
+                <img src="../TdeWeb/imagens/teatro-icon.svg" alt="Imagem ilustrativa de máscaras de teatro">
+            </div>
+            <p> Teatro </p>
+        </a>
+
+        <a href="comidas.html">
+            <div class="categorias">
+                <img src="../TdeWeb/imagens/hamburguer-icon.svg" alt="Imagem ilustrativa de um hambúrguer">
+            </div>
+            <p> Comidas </p>
+        </a>
+
+        <a href="cinema.html">
+            <div class="categorias">
+                <img src="../TdeWeb/imagens/televisao-icon.svg" alt="Imagem ilustrativa de uma televisão">
+            </div>
+            <p> Cinema </p>
+        </a> 
+    </main>
+
+</body>
+</html>

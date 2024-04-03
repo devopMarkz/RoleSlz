@@ -1,0 +1,83 @@
+:root {
+    --cor-de-fundo: #white;
+    --cor-de-fundo-formulario: #f0f3fa;
+    --borda-dos-inputs: solid 1px rgb(244, 230, 230);
+    --cor-de-fundo-do-botao: #B32A34;
+    --cor-das-letras-do-botao: white;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+}
+
+.caixa {
+    height: 90vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-image: url(../TdeWeb/imagens/backgroundCriarEvento.png);   
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.caixa-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    background-color: var(--cor-de-fundo-formulario);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.caixa-formulario__cabecalho {
+    text-align: center;
+}
+
+.caixa-formulario__formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.caixa-formulario__formulario > input, button {
+    padding: 10px;
+    border-radius: 10px;
+    border: var(--borda-dos-inputs);
+    outline: 0;
+}
+
+.caixa-formulario__formulario__data-hora {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+
+.caixa-formulario__formulario__data-hora > input {
+    flex-grow: 1;
+    padding: 10px;
+    border: var(--borda-dos-inputs);   
+    outline: 0;
+}
+
+.caixa-formulario__formulario__data-hora > input[name="dataDoEvento"] {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.caixa-formulario__formulario__data-hora > input[name="horaDoEvento"] {
+    border-radius: 0px 10px 10px 0px;
+}
+
+.caixa-formulario__formulario > input[type="submit"] {
+    background-color: var(--cor-de-fundo-do-botao);
+    color: var(--cor-das-letras-do-botao);
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .caixa {
+        background-image: url("../TdeWeb/imagens/backgroundCriarEvento-mobile.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
